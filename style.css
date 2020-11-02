@@ -1,0 +1,244 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+/** anchor fix desktop **/
+
+.anchor{
+	position:relative;
+}
+.anchor a{
+	position:absolute;
+	top:-90px;
+}
+
+
+/**** Media Queries *****/
+
+@media only screen and (max-width: 768px) {
+	.hide-col-mobile {
+		display:none;
+	}
+}
+
+
+body {
+	overflow-x: hidden;
+	font-family: Roboto;
+}
+
+/* --- Navigation ---*/
+
+
+.navbar {
+	text-transform: uppercase;
+	font-size: .9rem;
+	letter-spacing: .1rem;
+	background: rgba(0,0,0,0.8)!important;
+}
+.navbar-brand img {
+	height: 65px;
+	
+}
+
+.navbar-nav li {
+	padding-right:.7rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+	
+	color: white;
+	padding-top: 0.8rem;
+}
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+	color:#1ebba3;
+}
+
+.icon-bar{
+	color:white;
+}
+
+
+
+/* ----- hero banner ----*/
+
+.landing .home-wrap{
+	height:650px;!important
+}
+
+.home-inner {
+	background-image: url("banner.jpg");
+}
+
+.my-photo {
+	height:150px;
+	text-shadow: 0.1rem 0.1rem 0.8rem black;
+	padding-bottom:1.2rem;
+}
+
+.caption {
+	width:100%;
+	max-width: 100%;
+	position:absolute;
+	top:35%;
+	z-idex:1;
+	color:white;
+	
+}
+
+.caption h1 {
+	font-size:2.6rem;
+	font-weight:bold;
+	letter-spacing:0.2rem;
+	text-shadow: 0.1rem 0.1rem 0.8rem black;
+	padding-bottom:1.6rem;
+}
+
+.caption h3 {
+	font-size:1.8rem;
+	letter-spacing:0.2rem;
+	text-shadow: 0.1rem 0.1rem 0.8rem black;
+}
+
+.btn-lg {
+	border-width: medium;
+	margin-top:1.4rem;
+}
+
+/* Name animation text */
+
+.line-1{
+    position: relative;
+    top: 50%;  
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 4s steps(44) 0.5s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 12em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+
+/* Starting the XXX section */
+
+.circle-icon{
+	height:150px;
+	padding-bottom:1rem;
+}
+
+.feature-heading, .feature-heading-p{
+	text-align:center;
+}
+
+.feature-heading-line{
+	text-align:center;
+	font-weight:bold;
+	padding-bottom:10px;
+	color:#1ebba3;
+}
+
+.jumbotron {
+	margin-top:-160px;
+	margin-bottom:-32px;
+}
+
+.progress-bar{
+	background-color:red;
+}
+
+/** Interests section bello **/
+
+#interests{
+	position:relative;
+}
+
+.black-container{
+	padding-top:40px;
+	padding-bottom:30px;
+	background-color:black;
+	color:white;
+}
+
+.interests-icon{
+	padding-top:30px;
+	height:175px;
+	padding-bottom:30px;
+	
+}
+
+
+/** Portfolio projects boxes **/
+
+.project-container{
+	margin-top:35px;
+	padding-bottom:20px;
+}
+
+.portfolio-box-item{
+	height:300px;
+	padding:30px;
+	background-color:#EBEBEB;
+	color: transparent;
+	
+}
+
+.quote-heading{
+	font-style: italic;
+	padding-top:10px;
+	font-size:20px;
+	text-align:center;
+}
+
+/*** Box hover ***/
+
+.portfolio-box-item:hover{
+	background: rgba(30,187,163,0.7)!important;
+	opacity: 0.9;
+	color:white;
+}
+
+.heading-center{
+	margin-top:25%;
+}
+
+/** footer **/
+
+.contact-footer{
+	background-color:black;
+	margin-top:3rem;
+	padding-top:1rem;
+	color:white;
+}
+
+.contact-item{
+	padding-top:15px;
+}
+
+.footer-icons{
+	color:#1ebba3;
+}
+
+
+.disclamer-text{
+	font-size:13px;
+	text-align:left;
+	font-weight:lighter;
+	opacity:0.6;
+}
